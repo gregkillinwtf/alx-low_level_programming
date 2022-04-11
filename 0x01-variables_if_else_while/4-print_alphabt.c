@@ -17,7 +17,7 @@ if (alphabet == 'a')
 continue;
 
 else if (alphabet == 'e')
-continue:
+continue;
 
 putchar(alphabet);
 }
