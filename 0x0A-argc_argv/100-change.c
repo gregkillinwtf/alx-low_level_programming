@@ -43,7 +43,7 @@ while (i > 0 && coin <= 4)
 if (i >= coins[coin])
 {
 i -= coins[coin];
-coinUsed+;
+coinUsed++;
 }
 else
 {
