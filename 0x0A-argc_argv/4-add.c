@@ -18,8 +18,8 @@ unsigned int count;
 
 count = 0;
 while (count < strlen(str)) /*count string*/
-{
 
+{
 if (!isdigit(str[count])) /*check if str there are digit*/
 {
 return (0);
@@ -37,6 +37,7 @@ return (1);
  *
  * return: Always 0 (Success)
  */
+
 int main(int argc, char *argv[])
 
 {
