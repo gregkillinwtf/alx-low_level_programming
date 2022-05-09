@@ -5,7 +5,7 @@
  * @s: string
  * Return: int
  */
- 
+
 unsigned int _strlen(char *s)
 {
 unsigned int size = 0;
