@@ -7,7 +7,7 @@
  * @head: The character to print
  * @n: string for the new node
  *
- *
+ * Return: new node
  */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
