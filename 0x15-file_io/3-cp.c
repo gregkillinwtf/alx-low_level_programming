@@ -5,10 +5,10 @@
 #define SE STDERR_FILENO
 
 /**
- * main - create the copy bash script
- * @ac: argument count
- * @av: arguments as strings
- * Return: 0
+ * main - main function
+ * @ac: var 1
+ * @av: var 2
+ * Return: val
  */
 int main(int ac, char *av[])
 {
@@ -37,16 +37,16 @@ int main(int ac, char *av[])
 		{
 			ostatus = write(output_fd, buf, (ssize_t) istatus);
 			if (ostatus == -1)
-		dprintf(SE, "Error: Can't write to %s\n", av[2], exit(99);
+				dprintf(SE, "Error: Can't write to %s\n", av[2]), exit(99);
 		}
-		} while (istatus > 0);
+	} while (istatus > 0);
 
-		istatus = close(input_fd);
-		if (istatus == -1)
+	istatus = close(input_fd);
+	if (istatus == -1)
 		dprintf(SE, "Error: Can't close fd %d\n", input_fd), exit(100);
-		ostatus = close(output_fd);
-		if (ostatus == -1)
+	ostatus = close(output_fd);
+	if (ostatus == -1)
 		dprintf(SE, "Error: Can't close fd %d\n", output_fd), exit(100);
 
-		return (0);
-		}
+	return (0);
+}
